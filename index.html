@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio | Reynita</title>
+  <meta name="description" content="Website portofolio pribadi Reynita Maulina Anggraini">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Rey<span>Page</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">Beranda</a>
+      <a href="#about">Tentang Saya</a>
+      <a href="#skills">Kemampuan</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+      <a href="https://reynita023.wordpress.com" target="_blank" rel="noopener">WordPress</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Halo, saya</p>
+        <h1>REYNITA MAULINA ANGGRAINI</h1>
+        <h2><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc">Mahasiswa yang dapat membangun website dengan rapih, cepat, dan nyaman dipakai.</p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+          <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/reynitamaulina06-lgtm" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://instagram.com/i.rey_" target="_blank" rel="noopener">Instagram</a>
+          <a href="mailto:email@reynitamaulina06.com">Email</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring">
+                    <img src="rey_pict.jpeg" alt="Foto profil Reynita Maulina Anggraini">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>Saya mahasiswa Sistem Informasi yang sedang mendalami pengembangan web. Saya senang mengubah ide menjadi tampilan yang bisa dipakai langsung, dari desain sederhana sampai fitur interaktif.</p>
+          <p>Di luar kuliah, saya suka belajar dari tutorial, mengikuti proyek kecil, dan merapikan kode agar mudah dibaca.</p>
+          <div class="stats">
+            <a href="#projects"><b>6</b><span>Proyek</span></a>
+            <a href="#skills"><b>5</b><span>Kemampuan</span></a>
+            <a href="#contact"><b>24/7</b><span>Terbuka kolaborasi</span></a>
+          </div>
+        </div>
+        <ul class="info-card">
+          <li><strong>Nama</strong> Reynita Maulina Anggraini</li>
+          <li><strong>Kampus</strong> <a href="https://unpam.ac.id" target="_blank" rel="noopener">Universitas Pamulang Kampus Kota Serang</a></li>
+          <li><strong>Jurusan</strong> Sistem Informasi</li>
+          <li><strong>Domisili</strong> <a href="https://www.google.com/maps/search/Kragilan,+Serang,+Banten" target="_blank" rel="noopener">Kragilan, Serang, Banten</a></li>
+          <li><strong>Email</strong> <a href="mailto:email@reynitamaulina06.com">reynitamaulina06.com</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title">Kemampuan</h2>
+      <div class="skills" id="skillList">
+        <div class="skill"><div class="skill-head"><span>HTML</span><span>90%</span></div><div class="bar"><i data-level="90"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>CSS</span><span>85%</span></div><div class="bar"><i data-level="85"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>JavaScript</span><span>75%</span></div><div class="bar"><i data-level="75"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>Git &amp; GitHub</span><span>70%</span></div><div class="bar"><i data-level="70"></i></div></div>
+        <div class="skill"><div class="skill-head"><span>UI Design</span><span>65%</span></div><div class="bar"><i data-level="65"></i></div></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Daftar Proyek</h2>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">Semua</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="kuliah">Tugas Kuliah</button>
+      </div>
+      <div class="projects" id="projectGrid">
+        <article class="card" data-cat="web">
+          <div class="thumb g1">Aa</div>
+          <h3>Website Portofolio</h3>
+          <p>Website pribadi responsif dengan HTML, CSS, dan JavaScript.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </article>
+        <article class="card" data-cat="web">
+          <div class="thumb g2">To</div>
+          <h3>Aplikasi To-Do List</h3>
+          <p>Catat, selesaikan, dan hapus tugas harian dengan tampilan simpel.</p>
+          <div class="tags"><span>JavaScript</span><span>DOM</span></div>
+        </article>
+        <article class="card" data-cat="kuliah">
+          <div class="thumb g3">Ck</div>
+          <h3>Kalkulator Web</h3>
+          <p>Kalkulator dasar untuk tugas mata kuliah Pemrograman Web.</p>
+          <div class="tags"><span>HTML</span><span>JS</span></div>
+        </article>
+        <article class="card" data-cat="kuliah">
+          <div class="thumb g4">Bl</div>
+          <h3>Landing Page Kampus</h3>
+          <p>Halaman informasi kampus fiktif dengan layout grid dan flexbox.</p>
+          <div class="tags"><span>CSS Grid</span><span>Flexbox</span></div>
+        </article>
+        <article class="card" data-cat="web">
+          <div class="thumb g5">Cf</div>
+          <h3>Menu Kafe Digital</h3>
+          <p>Proyek fiktif: daftar menu kafe dengan filter kategori.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </article>
+        <article class="card" data-cat="kuliah">
+          <div class="thumb g6">Qz</div>
+          <h3>Kuis Interaktif</h3>
+          <p>Kuis pilihan ganda dengan skor akhir, dibuat untuk tugas akhir modul.</p>
+          <div class="tags"><span>JavaScript</span><span>Logic</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Kontak</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p>Punya pertanyaan atau ingin berkolaborasi? Kirim pesan, saya akan membalas secepatnya.</p>
+          <a href="mailto:email@reynitamaulina06.com">> Email</a>
+          <a href="https://github.com/reynitamaulina06-lgtm" target="_blank" rel="noopener">> GitHub</a>
+          <a href="https://instagram.com/i.rey_" target="_blank" rel="noopener">> Instagram</a>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label for="name">Nama</label>
+          <input id="name" name="name" type="text" placeholder="Nama lengkap" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="email@kamu.com" required>
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tulis pesanmu di sini" required></textarea>
+          <p class="form-msg" id="formMsg" role="status"></p>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Reynita Maulina Anggraini. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+    <nav class="footer-links" aria-label="Tautan footer">
+      <a href="#about">Tentang</a>
+      <a href="#projects">Proyek</a>
+      <a href="https://github.com/reynitamaulina06-lgtm" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://instagram.com/i.rey_" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://reynita023.wordpress.com" target="_blank" rel="noopener">WordPress</a>
+      <a href="#home">Kembali ke atas</a>
+    </nav>
+  </footer>
+
+  <!-- MODAL DETAIL PROYEK -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="to-top" id="toTop" aria-label="Kembali ke atas">&uarr;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
